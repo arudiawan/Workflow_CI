@@ -1,7 +1,0 @@
-name: Wine_Quality_MLOps
-
-conda_env: conda.yaml
-
-entry_points:
-  main:
-    command: "python modelling.py"
