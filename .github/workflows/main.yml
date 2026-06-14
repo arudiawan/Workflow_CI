@@ -27,5 +27,4 @@ jobs:
     - name: Execute MLflow Local Validation Run
       run: |
         echo "Initiating standardized model training validation via MLflow Run..."
-        # Mengarahkan robot untuk mengeksekusi folder MLProject sesuai diagram panduan
-        mlflow run MLProject --no-conda
+        mlflow run MLProject --env-manager local
