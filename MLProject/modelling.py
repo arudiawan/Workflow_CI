@@ -15,7 +15,7 @@ mlflow.set_experiment("Eksperimen Diabetes Real Data")
 mlflow.sklearn.autolog()
 
 def train_diabetes_model():
-    csv_path = "MLProject/diabetes_preprocessed.csv" if os.path.exists("MLProject/diabetes_preprocessed.csv") else "diabetes_preprocessed.csv"
+    csv_path = "MLProject/diabetes_preprocessing.csv" if os.path.exists("MLProject/diabetes_preprocessing.csv") else "diabetes_preprocessing.csv"
     data = pd.read_csv(csv_path)
     
     X = data.drop(columns=['target'])
